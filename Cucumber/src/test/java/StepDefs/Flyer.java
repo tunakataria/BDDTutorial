@@ -1,8 +1,11 @@
+package StepDefs;
+
+
 public class Flyer {
 
     String passengerName;
     String passengerType = "Normal";
-    Integer distanceTravelled = 0;
+    Integer distanceTravelled;
     int discountOffered = 0;
 
     public Flyer(String passengerName) {
@@ -14,11 +17,11 @@ public class Flyer {
     }
 
     public String getPassengerType() {
-        if (distanceTravelled <= 10000) {
+        if (distanceTravelled < 10000) {
             return passengerType;
         }
 
-        if (distanceTravelled > 10000) {
+        if (distanceTravelled >= 10000) {
             setPassengerType("Frequent Flyer");
             return passengerType;
         }
@@ -48,3 +51,4 @@ public class Flyer {
         return discountOffered;
     }
 }
+

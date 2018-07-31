@@ -37,6 +37,7 @@ formatter.match({
   "location": "FrequentFlyersSteps.an_extra_discount_of_percent_should_be_provided_to_customer_for_next_booking(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat StepDefs.FrequentFlyersSteps.an_extra_discount_of_percent_should_be_provided_to_customer_for_next_booking(FrequentFlyersSteps.java:33)\n\tat ✽.An extra discount of \"10\" percent should be provided to customer for next booking(src/Feature/FrequentFlyer.feature:10)\n",
+  "status": "failed"
 });
 });
