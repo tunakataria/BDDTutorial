@@ -7,6 +7,7 @@ public class Flyer {
     String passengerType = "Normal";
     Integer distanceTravelled;
     int discountOffered ;
+    String registrationScheme;
 
     public Flyer(String passengerName) {
         this.passengerName = passengerName;
@@ -47,12 +48,21 @@ public class Flyer {
 
 
     public int getDiscountOffered() {
-
-        if (passengerType.equalsIgnoreCase("Frequent Flyer")) {
+if(registrationScheme!=null) {
+    if (passengerType.equalsIgnoreCase("Frequent Flyer") && registrationScheme.equalsIgnoreCase("Diwali")) {
+        discountOffered = 15;
+        return discountOffered;
+    }
+}
+        if (passengerType.equalsIgnoreCase("Frequent Flyer")){
             discountOffered = 10;
             return discountOffered;
         }
         return discountOffered=0;
+    }
+
+    public void setRegistrationScheme(String registrationScheme){
+        this.registrationScheme = registrationScheme;
     }
 }
 
