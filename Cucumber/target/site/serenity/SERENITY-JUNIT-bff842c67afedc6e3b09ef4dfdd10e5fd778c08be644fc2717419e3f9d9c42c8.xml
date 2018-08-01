@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Extra perks to frequent flyers" skipped="0" tests="1" time="1.19" timestamp="2018-07-31 05:19:41"><testcase name="Extra discount to frequent flyers"><failure type="java.lang.AssertionError"/><system-err>null
-StepDefs.FrequentFlyersSteps.an_extra_discount_of_percent_should_be_provided_to_customer_for_next_booking(FrequentFlyersSteps.java:33)
-✽.An extra discount of "10" percent should be provided to customer for next booking(src/Feature/FrequentFlyer.feature:10)
-</system-err></testcase></testsuite>
