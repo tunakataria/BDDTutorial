@@ -6,7 +6,7 @@ public class Flyer {
     String passengerName;
     String passengerType = "Normal";
     Integer distanceTravelled;
-    int discountOffered = 0;
+    int discountOffered ;
 
     public Flyer(String passengerName) {
         this.passengerName = passengerName;
@@ -35,6 +35,10 @@ public class Flyer {
 
     public void setDistanceTravelled(int distanceTravelled) {
         this.distanceTravelled = distanceTravelled;
+        if(distanceTravelled>=10000){
+            setPassengerType("Frequent Flyer");
+        }
+
     }
 
     private void setPassengerType(String passengerType) {
@@ -48,7 +52,7 @@ public class Flyer {
             discountOffered = 10;
             return discountOffered;
         }
-        return discountOffered;
+        return discountOffered=0;
     }
 }
 
