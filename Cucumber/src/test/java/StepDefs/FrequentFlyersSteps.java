@@ -24,9 +24,9 @@ public class FrequentFlyersSteps {
     }
 
 
-    @When("Customer completes 10000 km with the airlines")
-    public void customer_completes_km_with_the_airlines() {
-      frequentFlyerStepFactoy.makeFlyerTravelDistance(10000);
+    @When("^Customer completes \"([^\"]*)\" km with the airlines$")
+    public void customer_completes_km_with_the_airlines(String distanceTravlled) {
+      frequentFlyerStepFactoy.makeFlyerTravelDistance(Integer.parseInt(distanceTravlled));
     }
 
     @Then("^An extra discount of \"([^\"]*)\" percent should be provided to customer for next booking$")
